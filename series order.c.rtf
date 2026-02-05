@@ -1,0 +1,31 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\tx720\cf1\f0\fs38\lang16393 #include <stdio.h>\par
+void main()\par
+\{\par
+    int size;\par
+    printf("enter how many elements to store \\n");\par
+    scanf("%d", &size);\par
+    int a[size];\par
+    for (int i=0 ; i<=size-1; i++)\par
+    \{\par
+        printf("enter the %d element \\n", (i+1));\par
+        scanf("%d", &a[i]);\par
+    \}\par
+    for(int i=0;i<=size-1; i++)\par
+    \{\par
+        if(a[i]+1==a[i+1])\par
+        \{\par
+        printf("%d",a[i]);\par
+        printf("%d",a[i+1]);\par
+        i++;\par
+    \}\par
+    else if(a[i]-1==a[i-1])\par
+    \{\par
+    printf("%d",a[i]);\par
+    printf("\\n");\par
+    \}\par
+\}\par
+\}\par
+}
